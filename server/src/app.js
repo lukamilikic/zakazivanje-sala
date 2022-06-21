@@ -8,9 +8,9 @@ app.use(morgan('combine'))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/status', (req, res) => {
+app.post('/create-user', (req, res) => {
   res.send({
-    message: 'Hello world!'
+    message: 'You successfully created a new user!'
   })
 })
 
